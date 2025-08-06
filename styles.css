@@ -1,6 +1,5 @@
-<style>
-    /* Reset margin and padding */
-    * {
+/* Reset margin and padding */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
   position: relative;
   min-height: 100vh;
-  font-family: "Teko", sans-serif;
+  font-family: "Bellefair", sans-serif;
   color: #fff;
   text-align: center;
   display: flex;
@@ -21,6 +20,9 @@ body {
   background: url("assets/61bc00b31edcc66b9902e3c7_WestStudio_LOL_Splash_0149.jpg")
     center center no-repeat;
   background-size: cover;
+  font-family: "Bellefair", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Dark overlay for contrast */
@@ -54,7 +56,7 @@ h1 {
   background: linear-gradient(to bottom, #1c1c1c, #111);
   color: #00bfff;
   font-size: 24px;
-  font-family: "Teko", sans-serif;
+  font-family: "Bellefair", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;

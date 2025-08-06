@@ -8,45 +8,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bungee+Spice&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>LoLdom</h1>
     <button id="fetchBtn">Random</button>
     <pre id="output">Click the button to pick a random champion</pre>
-
-    <script>
-      const AIRTABLE_BASE_ID = "appJq4LCFDFejRTO3";
-      const TABLE_NAME = "loldom";
-      const AIRTABLE_TOKEN =
-        "patabAfh7xPYe5YWJ.d01ab72de181dd54f0098709f7f9e304239b89e4fb74a84e45bb58d42cba77cc"; // Scoped PAT, not API Key
-
-      document
-        .getElementById("fetchBtn")
-        .addEventListener("click", async () => {
-          const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${TABLE_NAME}?pageSize=100`;
-
-          try {
-            const response = await fetch(url, {
-              headers: {
-                Authorization: `Bearer ${AIRTABLE_TOKEN}`,
-              },
-            });
-
-            const data = await response.json();
-            console.log("Response JSON:", data);
-            const records = data.records;
-            const random = records[Math.floor(Math.random() * records.length)];
-
-            document.getElementById("output").textContent = `
-Name: ${random.fields.Name || "N/A"}
-Quote: ${random.fields.Quote || "N/A"}
-`;
-          } catch (err) {
-            console.error("Fetch failed:", err);
-            document.getElementById("output").textContent =
-              "Fetch error: " + err.message;
-          }
-        });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
