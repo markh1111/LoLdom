@@ -8,7 +8,7 @@
 body {
   position: relative;
   min-height: 100vh;
-  font-family: "Bellefair", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: center;
   display: flex;
@@ -20,7 +20,7 @@ body {
   background: url("assets/61bc00b31edcc66b9902e3c7_WestStudio_LOL_Splash_0149.jpg")
     center center no-repeat;
   background-size: cover;
-  font-family: "Bellefair", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -40,13 +40,16 @@ body::before {
 
 h1 {
   font-size: 60px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
+  margin-bottom: 100px;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
-  color: #00bfff;
+  color: #fad53b;
   text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
   position: relative;
   z-index: 1;
+  border: 1px solid #fad53b;
+  border-radius: 20px;
+  background: #030807;
 }
 
 #fetchBtn {
@@ -54,11 +57,11 @@ h1 {
   height: 70px;
   border: 2px solid #00bfff;
   background: linear-gradient(to bottom, #1c1c1c, #111);
-  color: #00bfff;
+  color: #ffffff;
   font-size: 24px;
-  font-family: "Bellefair", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
@@ -92,4 +95,21 @@ pre {
   text-shadow: 0 0 4px rgba(0, 191, 255, 0.3);
   position: relative;
   z-index: 1;
+}
+
+.desc {
+  position: relative;
+  top: -50px;
+  font-size: large;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ffeda7;
+  border-radius: 20px;
+  background: #1e2328;
+  padding: 20px;
+}
+
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
 }
