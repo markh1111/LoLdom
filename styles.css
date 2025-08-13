@@ -17,7 +17,7 @@ body {
   justify-content: center;
 
   /* Background with the first splash image */
-  background: url("assets/61bc00b31edcc66b9902e3c7_WestStudio_LOL_Splash_0149.jpg")
+  background: url("assets/e1ww8ag2ram71.jpg")
     center center no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +33,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(14, 14, 16, 0.65);
+  background: rgba(14, 14, 16, 0.10);
   z-index: 0;
   pointer-events: none;
 }
@@ -50,6 +50,7 @@ h1 {
   border: 1px solid #fad53b;
   border-radius: 20px;
   background: #030807;
+  
 }
 
 #fetchBtn {
@@ -68,6 +69,7 @@ h1 {
   transition: all 0.2s ease;
   position: relative;
   z-index: 1;
+  
 }
 
 #fetchBtn:hover {
@@ -107,9 +109,25 @@ pre {
   border-radius: 20px;
   background: #1e2328;
   padding: 20px;
+  display: inline;
+  inline
 }
 
 section {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
+  font-size:x-large;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: xx-large;
+}
+
+p {
+  padding-bottom: 10px;
+    font-size: x-large;
+    font-weight: 600;
 }

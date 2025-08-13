@@ -47,12 +47,7 @@ function renderOutput(records) {
 <header>
   <h2>${name}</h2>
 </header>
-<style>
-p {
-font-family: Arial, sans-serif;
-font-color: White;
-}
-</style>
+
 <p>Playstyle:
   <span>${playstyle}</span>
 </p>
