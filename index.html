@@ -16,11 +16,24 @@
     />
   </head>
   <body>
-    <main>
+    <header>
+      <div class="wednesday">
       <h1>LoLdom</h1>
-      <p class="desc">Pick a random League of Legends champion</p>
-      <button id="fetchBtn">Random</button>
-      <section id="output">Click the button to pick a random champion</section>
+      </div>
+    </header>
+    <main class="main">
+      <section class="select-character">
+        <div>
+          <p class="desc">Pick a random League of Legends champion</p>
+        </div>
+        <div>
+          <button id="fetchBtn">Random</button>
+        </div>
+        <div id="pick-message">
+          <p class="stuff">Click the button to pick a random champion</p>
+        </div>
+      </section>
+      <section id="output"></section>
       <script src="./script.js"></script>
     </main>
   </body>

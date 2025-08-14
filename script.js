@@ -5,9 +5,12 @@ const AIRTABLE_TOKEN =
 
 const fetchBtn = document.getElementById("fetchBtn");
 const output = document.getElementById("output");
+const pickMessage = document.getElementById("pick-message");
 
 document.getElementById("fetchBtn").addEventListener("click", async () => {
   const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${TABLE_NAME}?pageSize=100`;
+
+  pickMessage.classList.add("display-none");
 
   try {
     const response = await fetch(url, {
@@ -45,12 +48,15 @@ function renderOutput(records) {
 
   const innerHTML = `
 <header>
-  <h2>${name}</h2>
+<div class="tuesday">
+  <h2 class="monday">${name}</h2>
+  </div>
 </header>
-
-<p>Playstyle:
+<div class="tuesday">
+<p class="monday">Playstyle:
   <span>${playstyle}</span>
 </p>
+</div>
 ${figure}
 `;
 
